@@ -6,6 +6,23 @@ body {
     background-color: rgb(253, 242, 228);
 }
 
+#handles {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(150, 124, 88);
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+#handles a {
+    text-decoration: none;
+    color: rgb(41, 0, 0);
+}
+#handles a::after {
+    content: ": " attr(href);
+}
+
 h1 {
     color: rgb(153, 133, 20);
 }
