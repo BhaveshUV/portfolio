@@ -41,9 +41,16 @@ section, header {
     font-size: 1rem;
     padding: 0.5rem;
     margin: 0.5rem auto;
-    width: 60rem;
+    width: 60%;
     background-color: rgb(33, 55, 79);
     color: rgb(253, 242, 228);
+    border-radius: 5em 1em / 1em 5em;
+    transition: transform 2s ease 0s, font-size 2s ease 0s, padding 2s ease 0s, height 2s ease 0s;
+}
+
+header:hover, section:hover {
+    padding: 1.5%;
+    font-size: 1.1rem;
 }
 
 footer {
