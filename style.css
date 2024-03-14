@@ -3,25 +3,30 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: rgb(253, 242, 228);
 }
 
 #handles {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
     position: sticky;
     top: 0px;
     background-color: rgb(150, 124, 88);
     margin: 0 auto;
     padding: 1rem;
     width: 100%;
+    z-index: 10;
 }
 
 #handles a {
     text-decoration: none;
     color: rgb(41, 0, 0);
 }
-#handles a::after {
+/* #handles a::after {
     content: ": " attr(href);
-}
+} */
 
 h1 {
     color: rgb(153, 133, 20);
@@ -46,12 +51,22 @@ section, header {
     background-color: rgb(33, 55, 79);
     color: rgb(253, 242, 228);
     border-radius: 5em 1em / 1em 5em;
-    transition: transform 2s ease 0s, font-size 2s ease 0s, padding 2s ease 0s, height 2s ease 0s;
+    transition: transform 0.5s ease 0s, font-size 2s ease 0s, padding 2s ease 0s, height 2s ease 0s;
+}
+
+section dl dt{
+    padding: 0.1rem;
+}
+
+section a {
+    text-decoration: none;
+    color: inherit;
 }
 
 header:hover, section:hover {
-    padding: 1.5%;
-    font-size: 1.1rem;
+    /* padding: 1.5%;
+    font-size: 1.1rem; */
+    transform: scale(1.1);
 }
 
 footer {
