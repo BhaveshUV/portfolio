@@ -2,18 +2,21 @@
     font-family: Tahoma, Verdana, 'Segoe UI', Geneva, sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-    background-color: rgb(253, 242, 228);
+html, body {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(255, 251, 246);
 }
 
 #handles {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     gap: 4rem;
     position: sticky;
     top: 0px;
     background-color: rgb(150, 124, 88);
+    /* background-color: black; */
     margin: 0 auto;
     padding: 1rem;
     width: 100%;
@@ -23,13 +26,14 @@ body {
 #handles a {
     text-decoration: none;
     color: rgb(41, 0, 0);
+    /* color:white; */
 }
 /* #handles a::after {
     content: ": " attr(href);
 } */
 
-h1 {
-    color: rgb(153, 133, 20);
+#name {
+    color: rgb(173, 155, 55);
 }
 
 h2, h3 {
@@ -43,15 +47,16 @@ img {
 }
 
 section, header {
+    box-sizing: border-box;
     text-align: center;
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem auto;
     width: 60%;
     background-color: rgb(33, 55, 79);
     color: rgb(253, 242, 228);
     border-radius: 5em 1em / 1em 5em;
-    transition: transform 0.5s ease 0s, font-size 2s ease 0s, padding 2s ease 0s, height 2s ease 0s;
+    transition: transform 0.5s ease 0s;
 }
 
 section dl dt{
@@ -70,6 +75,7 @@ header:hover, section:hover {
 }
 
 footer {
+    box-sizing: border-box;
     text-align: center;
     color:rgb(253, 242, 228);
     padding: 0.5em;
@@ -86,18 +92,22 @@ p{
     text-align: center;
     width: 100%;
 }
+footer+p{
+    scale:0.8;
+}
 
 @media(max-width: 640px){
     header, section{
+        font-size: 0.9rem;
         width: 90%;
     }
-    header:hover, section:hover{
+    /* header:hover, section:hover{
         padding: 8% 0.5rem;
         font-size: 1.1rem;
-    }
+    } */
 }
-@media(max-width: 450px){
+/* @media(max-width: 450px){
     header, section{
         width: 100%;
     }
-}
+} */
